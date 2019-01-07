@@ -1,0 +1,27 @@
+
+nav {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica;
+    background: darkgreen;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+
+    margin: 0;
+    padding: 0.2rem 0 0.2rem 4rem;
+}
+
+nav li {
+    padding: 0.2rem;
+    margin-right: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}

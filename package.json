@@ -1,0 +1,13 @@
+{
+  "name": "outtersite",
+  "version": "1.0.0",
+  "description": "Static website",
+  "scripts": {
+    "start": "npx serve -l 8080 src"
+  },
+  "author": "Eoin Flanagan",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^10.1.1"
+  }
+}
