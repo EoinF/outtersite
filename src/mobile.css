@@ -1,0 +1,9 @@
+@media (max-width: 500px) {
+    .text-image-group  {
+        display:block;
+    }
+
+    .text-image-group div.image-section {
+        max-width: 100%;
+    }
+}

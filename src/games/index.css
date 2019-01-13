@@ -1,0 +1,31 @@
+
+.card-container > * {
+    padding: 0.75rem 0;
+}
+
+.image-caption {
+    margin-top: 0.125rem;
+    font-size: 0.75rem;
+}
+
+.jiggen-links {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.jiggen-links a {
+    display: flex;
+    text-decoration: none;
+    height: 2.25rem;
+}
+.jiggen-links a+a {
+    margin-left: 0.2rem;
+}
+
+.jiggen-links img {
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    max-height: 100%;
+}

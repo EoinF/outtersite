@@ -1,0 +1,5 @@
+@media (max-width: 400px) {
+    .card-container  {
+        min-width: 95%;
+    }
+}

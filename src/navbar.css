@@ -1,15 +1,15 @@
 
 nav {
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica;
-    background: darkgreen;
+    font-size: 1.75rem;
+    background: rgb(0, 112, 177);
     width: 100%;
+    box-shadow: 1px 1px 5px black;
 }
 
 nav ul {
     display: flex;
     flex-flow: row nowrap;
-    align-content: center;
+    align-items: center;
 
     margin: 0;
     padding: 0.2rem 0 0.2rem 4rem;
@@ -24,4 +24,17 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 400px) {
+    nav {
+        font-size: 1.3rem;
+    }
+    nav li {
+        margin: 0;
+    }
+    nav ul {
+        justify-content: space-evenly;
+        padding: 0.2rem 0;
+    }
 }

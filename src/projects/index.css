@@ -1,0 +1,54 @@
+.card-container {
+    min-width: 400px;
+    margin: 1rem 0.5rem 0;
+    padding: 1rem;
+}
+
+.card-container h1 {
+    font-size: 1.75rem;
+    margin-left: 0.3rem;
+}
+
+.card-container-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+.card-container-controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.expandable:target .expanded{
+    display: block;
+}
+.expandable:not(:target) .expanded{
+    display: none;
+}
+
+.expandable:target .not-expanded {
+    display: none;
+}
+.expandable:not(:target) .not-expanded {
+    display: block;
+}
+
+.expandable:target .expanded .anim-expand-height {
+    animation: expand-height 0.5s ease-in 0s;
+    overflow: hidden;
+}
+
+.resizable-video-wrapper {
+    margin: 1rem;
+}
+
+@keyframes expand-height {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 1000px;
+    }
+}

@@ -2,17 +2,154 @@
     <title>Outterest</title>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css'/>
     <link rel='stylesheet' href='index.css' />
+    <link rel='stylesheet' href='mobile.css' />
+    <link rel='stylesheet' href='games/index.css' />
+    <link rel='stylesheet' href='games/mobile.css' />
     <link rel='stylesheet' href='navbar.css' />
+    <link rel='stylesheet' href='footer.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav class='nav'>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="games">Games</a></li>
-            <li><a href="aboutme">About Me</a></li>
-        </ul>
-    </nav>
-    <div>
-        hello world
+    <div id='app-container'>
+        <nav class='nav'>
+            <ul>
+                <li><a href="/">Games</a></li>
+                <li><a href="projects">All Projects</a></li>
+                <li><a href="aboutme">About Me</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class='card-container'>
+                <div class='text-image-group'>
+                    <div class='text-section'>
+                        <h1>Jiggen</h1>
+                        <span><strong>Jig</strong>saw <strong>gen</strong>erator.</span>
+                        <div class='jiggen-links'>
+                            <a href='https://jiggen.app/'>
+                                <button>Play</button>
+                            </a>
+                            <a href='/projects#jiggen'>
+                                <button>More Info</button>
+                            </a>
+                            <a href='https://github.com/EoinF/Jiggen'>
+                                <img src='/assets/github-mark.png'/>
+                            </a>
+                        </div>
+                        <p>
+                            A browser game that can be played on your phone, tablet or desktop.
+                        </p>
+                        <p>
+                            Solve pre-made jigsaw puzzles or create your own!
+                        </p>
+                    </div>
+                    <div class="image-section">
+                        <div>
+                            <img src="/assets/jiggen/screenshot2.png"/>
+                            <div class='image-caption'>Solve puzzles on phone, tablet or desktop</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Initial Prototype</h2>
+                    <p>
+                        What originally started as a birthday present to my girlfriend has evolved into a
+                        big project. She enjoys solving jigsaw puzzles so I decided to make a little app
+                        for creating your own puzzles.
+                    </p>
+                    <p>
+                        Instead of just making the millionth jigsaw puzzle game, I thought of something that
+                        would set it apart from the rest. The ability to supply your own black and white puzzle 
+                        template and then a background image to be superimposed onto it.
+                    </p>
+                </div>
+                <div class='text-image-group'>
+                    <div class='text-section'>
+                        <p>
+                            I completed a little prototype that reads in a template image and splits it up
+                            into individual pieces.
+                        </p>
+                        <p>
+                            I used a flood fill algorithm to discover all the pixels in each puzzle piece and then
+                            created a new texture for each piece.
+                        </p>
+                        <p>
+                            Then I assigned a random colour to each piece so it would be clear that they are broken up.
+                        </p>
+                    </div>
+                    <div class="image-section">
+                        <div>
+                            <img 
+                                src="/assets/jiggen/screenshot3.png"
+                                width='400px'
+                            />
+                            <div class='image-caption'>
+                                An early prototype
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Cross platform support</h2>
+                    <p>
+                        After completing the first prototype I felt there was some promise, so I did a bit of research.
+                        I looked for existing jigsaw puzzle websites and found that none of them properly supported
+                        mobile devices and some of them didn't even support touch controls. Not to mention the web
+                        1.0 designs.
+                    </p>
+                    <p>
+                        To me, this seems like a crucial feature for a puzzle game. Being able to play on your phone or tablet 
+                        while on the train or during a long flight. Not to mention that it's more natural to use touch controls
+                        for this kind of game instead of a mouse. It's just not the same experience.
+                    </p>
+                </div>
+                <div>
+                    <h2>Customization is key</h2>
+                    <p>
+                        I really wanted to provide powerful customization options, but not too complicated.
+                        So I decided to provide the option to choose a template and a background to generate
+                        a puzzle.
+                    </p>
+                </div>
+                <div class='text-image-group'>
+                        <div class='text-section'>
+                            <p>
+                                Images can be uploaded via your phone, or even linked from other websites. I avoid
+                                data privacy and GDPR issues by never saving these images.
+                            </p>
+                            <p>
+                                They are only ever accessed from the user's browser and never actually leave the device.
+                            </p>
+                            <p>
+                                Backgrounds will also be provided by the app so you don't always have to source your 
+                                own images.
+                            </p>
+                        </div>
+                        <div class="image-section">
+                            <div>
+                                <img
+                                    src="/assets/jiggen/screenshot1.png"
+                                />
+                                <div class='image-caption'>
+                                    Images can be used from your device or other websites
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <a href='https://github.com/EoinF'>
+                github
+            </a>
+            <a href='https://twitter.com/outterest'>
+                twitter
+            </a>
+            <a href='https://www.linkedin.com/in/eoinf'>
+                linkedIn
+            </a>
+            <a href='https://www.youtube.com/user/outterest'>
+                youtube
+            </a>
+        </footer>
     </div>
 </body>

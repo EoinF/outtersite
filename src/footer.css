@@ -1,0 +1,20 @@
+footer {
+    padding-top: 1.25rem;
+    padding-bottom: 1.75rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a,
+footer a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    /* color: rgb(0, 112, 177); */
+    color: rgb(0, 101, 160);
+}
+
+footer > * {
+    margin: 0.25rem 1rem;
+}
