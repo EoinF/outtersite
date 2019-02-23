@@ -17,6 +17,10 @@ body {
     align-content: space-around;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 main {
     flex: 1;
     min-height: fit-content;
@@ -24,7 +28,8 @@ main {
     flex-flow: row wrap;
     align-items: flex-start;
     align-content: start;
-    justify-content: space-evenly;
+    justify-items: center;
+    justify-content: center;
 }
 
 .card-container {
@@ -37,7 +42,7 @@ main {
     border: 1px solid #87d4b0;
     box-shadow: 1px 1px 10px black;
     
-    min-width: 700px;
+    min-width: 95%;
     
     margin: 1rem;
     padding: 1rem 1.5rem;
@@ -46,11 +51,15 @@ main {
     height: fit-content;
 
     margin-bottom: 1rem;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
-@media (max-width: 730px) {
+@media (min-width: 1030px) {
     .card-container {
-        min-width: 80%;
+        min-width: 1000px;
     }
 }
 
@@ -108,5 +117,13 @@ button.secondary {
 
 .text-image-group .image-section img {
     max-width: 100%;
+    max-height: 100%;
+}
+
+.github-link {
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
     max-height: 100%;
 }

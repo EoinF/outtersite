@@ -1,7 +1,14 @@
+
 .card-container {
-    min-width: 400px;
+    min-width: 95%;
     margin: 1rem 0.5rem 0;
     padding: 1rem;
+}
+
+.card-container:target {
+    align-self: start;
+    overflow: hidden;
+    animation: expand-card-height 1.5s ease-out 0s forwards;
 }
 
 .card-container h1 {
@@ -10,20 +17,24 @@
 }
 
 .card-container-content {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
     padding: 0.6rem;
+}
+.card-container-content .card-title {
+    display: flex;
 }
 
 .card-container-controls {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 0.1875rem;
+}
+.card-container-controls a+a {
+    margin-left: 0.1875rem;
 }
 
-.expandable:target .expanded{
+/* .expandable:target .expanded{
     display: block;
-}
+} */
 .expandable:not(:target) .expanded{
     display: none;
 }
@@ -31,22 +42,30 @@
 .expandable:target .not-expanded {
     display: none;
 }
-.expandable:not(:target) .not-expanded {
-    display: block;
-}
-
-.expandable:target .expanded .anim-expand-height {
-    animation: expand-height 0.5s ease-in 0s;
-    overflow: hidden;
-}
 
 .resizable-video-wrapper {
+    width: 100%;
     margin: 1rem;
 }
 
-@keyframes expand-height {
+.media-section {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.media-section img {
+    max-width: 100%;
+    margin: 1px;
+    
+    border: 1px solid #87d4b0;
+    box-shadow: 1px 1px 1px #232323;
+}
+
+
+@keyframes expand-card-height {
     from {
-        max-height: 0;
+        max-height: 200px;
     }
     to {
         max-height: 1000px;
