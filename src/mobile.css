@@ -7,3 +7,25 @@
         max-width: 100%;
     }
 }
+
+.viewport-small, .viewport-medium, .viewport-large {
+    display: none;
+}
+
+@media(max-width: 400px) {
+    .viewport-small {
+        display: block;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    .viewport-medium {
+        display: block;
+    }
+}
+
+@media (min-width: 800px) {
+    .viewport-large {
+        display: block;
+    }
+}

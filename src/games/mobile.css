@@ -1,7 +1,80 @@
-@media (max-width: 400px) {
+@media (min-width: 400px) {
     .card-container  {
-        margin: 1rem 0.5rem 0;
-        min-width: initial; 
-        max-width: initial;
+        min-width: 400px;
+    }
+}
+
+@media(min-width: 850px) {
+    .card-container {
+        min-height: 275px;
+        order: 1;
+    }
+    .card-container:target .modal {
+        animation: fade-in 0.5s ease-in 0s forwards;
+    }
+    .modal-only-content {
+        display: block;
+    }
+
+    .modal-title {
+        display: flex;
+    }
+
+    .media-section {
+        grid-template-columns: 1fr 1fr;
+    }
+        
+    .modal {
+        box-shadow: 1px 1px 5px black;
+        background: radial-gradient(200px, rgb(229, 248, 255), rgb(217, 232, 239));
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        bottom: 30px;
+        right: 30px;
+        padding: 1.5rem;
+
+        z-index: 2;
+    }
+
+    .modal-close-button {
+        display: block;
+        position: fixed;
+        top: 14px;
+        right: 14px;
+
+        font-family: monospace;
+        font-size: 2rem;
+        /* font-weight: bold; */
+        text-decoration: none;
+        color: white;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        /* padding: 1rem; */
+        border-radius: 40px;
+        width: 2rem;
+        height: 2rem;
+
+        z-index: 3;
+    }
+
+    .modal-background-blur {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+        background: black;
+        z-index: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

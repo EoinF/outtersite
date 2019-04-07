@@ -1,0 +1,7 @@
+@media (max-width: 400px) {
+    .card-container  {
+        margin: 1rem 0.5rem 0;
+        min-width: initial; 
+        max-width: initial;
+    }
+}
