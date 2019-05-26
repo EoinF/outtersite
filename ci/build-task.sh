@@ -5,6 +5,7 @@ find src -type f \
     ! -name '*.gz' \
     ! -name '*.png' \
     ! -name '*.jpg' \
+    ! -name '*.gif' \
     ! -name '*.ico' \
     ! -name '*.swf' \
         -exec gzip "{}" \;
@@ -44,5 +45,3 @@ aws s3 sync src s3://www.outterest.com/ \
 --include "*.vert" --acl "public-read" --content-encoding gzip \
 --include "*.json" --acl "public-read" --content-encoding gzip \
 --delete
-
-aws s3 cp src s3://www.outterest.com/ --recursive
