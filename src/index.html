@@ -19,27 +19,27 @@
             </ul>
         </nav>
         <main>
-            <div class='card-container'>
+            <div class='card-container-large'>
                 <div class='text-image-group'>
                     <div class='text-section'>
-                        <h1>Jiggen</h1>
-                        <span><strong>Jig</strong>saw <strong>gen</strong>erator.</span>
-                        <div class='jiggen-links'>
-                            <a href='https://jiggen.app/'>
-                                <button>Play</button>
-                            </a>
-                            <a href='/games#jiggen'>
-                                <button class="secondary">More Info</button>
-                            </a>
-                            <a class='github-link' href='https://github.com/EoinF/Jiggen'>
-                                <img src='/assets/github-mark.png'/>
-                            </a>
+                        <div class='card-title'>
+                            <div>
+                                <img class="fixed-width-image" src="/assets/jiggen/logo.png" width="64px" height="64px"/>
+                            </div>
+                            <h1>Jiggen</h1>
                         </div>
+                        <span><strong>Jig</strong>saw <strong>gen</strong>erator.</span>
                         <p>
                             A browser game that can be played on your phone, tablet or PC.
                         </p>
                         <p>
                             Solve pre-made jigsaw puzzles or create your own!
+                        </p>
+                        <p>
+                            Play it at <a class='jiggen-link' href='https://jiggen.app'>https://jiggen.app</a>
+                        </p>
+                        <p>
+                            Gameplay and features <a class='jiggen-link' href='/games/jiggen'>here</a>
                         </p>
                     </div>
                     <div class="image-section">
@@ -56,14 +56,15 @@
                         fully-fledged app. She enjoys solving jigsaw puzzles so I decided to make a little app
                         for creating and solving your own jigsaw puzzles.
                     </p>
-                    <p>
-                        The initial idea for the game was to allow templates to be uploaded, from which the puzzle
-                        pieces would be extracted. Then a background image could be chosen to be paired with that template,
-                        either from a list of predefined backgrounds or one provided by the player.
-                    </p>
                 </div>
                 <div class='text-image-group'>
                     <div class='text-section'>
+                        
+                    <p>
+                            The initial idea for the game was to allow templates to be uploaded, from which the puzzle
+                            pieces would be extracted. Then a background image could be chosen to be paired with that template,
+                            either from a list of predefined backgrounds or one provided by the player.
+                        </p>
                         <p>
                             I completed a little prototype that reads in a template image and splits it up
                             into individual puzzle pieces.
@@ -93,7 +94,7 @@
                     <h2>Play on any device</h2>
                 </div>
                 <div class='text-image-group'>
-                    <div class='text-section'>
+                    <div class='text-section any-device-section'>
                         <p>
                             After completing the first prototype I felt there was some promise, so I did a bit of research.
                             I looked for existing jigsaw puzzle websites and found that none of them properly supported
@@ -104,6 +105,12 @@
                             while on the train or during a long flight. Not to mention that it's more natural to use touch controls
                             for this kind of game instead of a mouse.
                         </p>
+                        <div class='any-device-section-image-container'>
+                            <img src="/assets/jiggen/screenshot6.png" />
+                            <div class='image-caption'>
+                                Save custom puzzles to your device
+                            </div>
+                        </div>
                     </div>
                     <div class="image-section">
                         <div>
@@ -118,14 +125,14 @@
                 </div>
                 <div>
                     <h2>Create your own puzzles</h2>
-                    <p>
-                        I wanted to provide useful customization options, but not so complicated that it would overwhelm
-                        the player. Jiggen has a screen where you just choose a template and a background, and then go right
-                        into solving the puzzle.
-                    </p>
                 </div>
                 <div class='text-image-group'>
                     <div class='text-section'>
+                        <p>
+                            I wanted to provide useful customization options, but not so complicated that it would overwhelm
+                            the player. Jiggen has a screen where you just choose a template and a background, and then go right
+                            into solving the puzzle.
+                        </p>
                         <p>
                             Images can be uploaded via your phone, or even linked from other websites. I avoid
                             data privacy and GDPR issues by never saving these images.

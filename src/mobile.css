@@ -5,7 +5,9 @@
 
     .text-image-group div.image-section {
         max-width: 100%;
+        margin: auto;
     }
+    
 }
 
 .viewport-small, .viewport-medium, .viewport-large {

@@ -7,8 +7,27 @@
 @media(min-width: 850px) {
     .card-container {
         min-height: 275px;
-        order: 1;
     }
+
+    .card-body {
+        height: 5rem;
+    }
+    
+    .card-title-container {
+        display: flex;
+    }
+
+    .card-container .card-container-content .card-title {
+        flex-flow: column;
+        margin-right: 0.5rem;
+        justify-content: center;
+    }
+
+    .card-container .card-container-content .card-title h1 {
+        width: 7rem;
+        white-space: unset;
+    }
+
     .card-container:target .modal {
         animation: fade-in 0.5s ease-in 0s forwards;
     }

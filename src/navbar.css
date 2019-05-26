@@ -1,5 +1,7 @@
 
 nav {
+    position: sticky;
+    top: 0;
     font-size: 1.75rem;
     background: rgb(0, 112, 177);
     width: 100%;
@@ -24,9 +26,10 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
+    white-space: nowrap;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     nav {
         font-size: 1.3rem;
     }
@@ -34,6 +37,8 @@ nav a {
         margin: 0;
     }
     nav ul {
+        justify-content: space-around;
+         /* space-evenly doesn't work in edge */
         justify-content: space-evenly;
         padding: 0.2rem 0;
     }

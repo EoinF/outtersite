@@ -32,7 +32,7 @@ main {
     justify-content: center;
 }
 
-.card-container {
+.card-container-large {
     color: black;
 
     /* background: lightblue; */
@@ -44,9 +44,6 @@ main {
     
     min-width: 95%;
     
-    margin: 1rem;
-    padding: 1rem 1.5rem;
-    
     max-width: 40vw;
     height: fit-content;
 
@@ -55,10 +52,13 @@ main {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+
+    margin: 1rem;
+    padding: 1rem;
 }
 
 @media (min-width: 1030px) {
-    .card-container {
+    .card-container-large {
         min-width: 1000px;
     }
 }
@@ -73,6 +73,8 @@ main {
     height: 0;
     overflow: hidden; 
     max-width: 100%;
+    animation: loading-spinner 1s linear 1s alternate infinite;
+    /* box-shadow: 1px 1px 10px black; */
 }
 .resizable-video-wrapper iframe {
     position: absolute;
@@ -106,17 +108,31 @@ button.secondary {
 
 .text-image-group .text-section {
     flex: 1;
-    margin-right: 0.5rem;
 }
 .text-image-group .image-section {
     display: flex;
     align-content: center;
     justify-content: center;
     max-width: 65%;
+    margin-left: 0.75rem;
 }
 
 .text-image-group .image-section img {
     max-width: 100%;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+}
+.card-title h1 {
+    margin-left: 0.3rem;
+}
+
+.jiggen-link {
+    font-weight: bold;
+    color: #763597;
+    text-decoration: none;
 }
 
 .github-link {
@@ -125,4 +141,20 @@ button.secondary {
     border: 1px solid darkslategrey;
     border-radius: 5px;
     max-height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+@keyframes loading-spinner {
+    from {
+        background: lightblue;
+        transform: rotate(0);
+    }
+    to {
+        background: cyan;
+        tranform: rotate(360deg);
+    }
 }
