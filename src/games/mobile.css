@@ -8,10 +8,6 @@
     .card-container {
         min-height: 275px;
     }
-
-    .card-body {
-        height: 5rem;
-    }
     
     .card-title-container {
         display: flex;
