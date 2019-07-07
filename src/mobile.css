@@ -31,3 +31,15 @@
         display: block;
     }
 }
+
+@media (min-width: 1030px) {
+    .card-container-large {
+        min-width: 1000px;
+    }
+}
+
+@media (min-width: 620px) {
+    .card-container-medium {
+        min-width: 600px;
+    }
+}
