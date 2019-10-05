@@ -3,11 +3,21 @@
   "version": "1.0.0",
   "description": "Static website",
   "scripts": {
-    "start": "npx serve -l 8000 src"
+    "start": "gulp start",
+    "build": "gulp build"
   },
   "author": "Eoin Flanagan",
   "license": "ISC",
   "devDependencies": {
-    "serve": "^10.1.1"
-  }
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-handlebars-html": "0.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-replace": "^1.0.0",
+    "handlebars": "^4.4.2",
+    "serve": "^10.1.2",
+    "del": "^5.1.0"
+  },
+  "dependencies": {}
 }

@@ -1,7 +1,9 @@
 #!/bin/sh
 set -ex
 
-find src -type f \
+npm run build
+
+find build -type f \
     ! -name '*.gz' \
     ! -name '*.png' \
     ! -name '*.jpg' \
@@ -10,13 +12,13 @@ find src -type f \
     ! -name '*.swf' \
         -exec gzip "{}" \;
 
-# Remove gzip extension from each file
-for f in `find src -type f -name '*.gz'`; do
+# Remove gzip extension from each filename
+for f in `find build -type f -name '*.gz'`; do
     mv $f ${f%.gz}
 done
 
 # Upload non gzipped files
-aws s3 sync src s3://www.outterest.com/ \
+aws s3 sync build s3://www.outterest.com/ \
 --include "*" --acl "public-read" \
 --exclude "*.js" \
 --exclude "*.css" \
@@ -32,7 +34,7 @@ aws s3 sync src s3://www.outterest.com/ \
 --delete
 
 # Upload gzipped files with content-encoding header set to gzip
-aws s3 sync src s3://www.outterest.com/ \
+aws s3 sync build s3://www.outterest.com/ \
 --exclude "*" \
 --include "*.js" --acl "public-read" --content-encoding gzip \
 --include "*.css" --acl "public-read" --content-encoding gzip \
