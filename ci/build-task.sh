@@ -1,6 +1,7 @@
 #!/bin/sh
 set -ex
 
+npm ci
 npm run build
 
 find build -type f \
