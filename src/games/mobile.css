@@ -85,12 +85,6 @@
     }
 }
 
-@media(min-width: 1300px) {
-    .card-container {
-        min-height: 430px;
-    }
-}
-
 @keyframes fade-in {
     from {
         opacity: 0;
