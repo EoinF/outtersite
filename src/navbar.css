@@ -1,6 +1,7 @@
 
 nav {
     position: sticky;
+    z-index: 999;
     top: 0;
     font-size: 1.75rem;
     background: rgb(0, 112, 177);
@@ -38,8 +39,6 @@ nav a {
     }
     nav ul {
         justify-content: space-around;
-         /* space-evenly doesn't work in edge */
-        justify-content: space-evenly;
-        padding: 0.2rem 0;
+        padding: 0.2rem 1rem;
     }
 }

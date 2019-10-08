@@ -21,7 +21,8 @@ body {
     box-sizing: border-box;
 }
 
-main {
+
+.flex-cards {
     flex: 1;
     min-height: fit-content;
     display: flex;
@@ -30,6 +31,14 @@ main {
     align-content: start;
     justify-items: center;
     justify-content: center;
+}
+
+.grid-cards {
+    flex: 1;
+    min-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;    
+    justify-items: center;
 }
 
 .vertical-aligned {
@@ -48,7 +57,7 @@ main {
     
     min-width: 95%;
     
-    max-width: 40vw;
+    min-height: 12rem; 
     height: fit-content;
 
     margin-bottom: 1rem;
@@ -136,6 +145,7 @@ button.secondary {
     display: flex;
     align-content: center;
     justify-content: center;
+    align-items: center;
     max-width: 65%;
     margin-left: 0.75rem;
 }
@@ -154,26 +164,32 @@ button.secondary {
 
 .card-title-split {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .card-title-split h1 {
     font-size: 2rem;
-    margin: 0.75rem 0rem;
+    min-height: 3rem;
+    margin: 0.5rem 0rem;
 }
 .card-title-split h2 {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-style: italic;
     margin: 0.75rem 0;
 }
+.card-description h2 {
+    min-height: 1rem;
+}
 
-.jiggen-link {
+.link {
     font-weight: bold;
     color: #763597;
     text-decoration: none;
 }
 
 .wrapper-link {
+    flex: 1;
     text-decoration: none;
     color: initial;
 }
@@ -188,6 +204,7 @@ button.secondary {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 @keyframes loading-spinner {
@@ -199,4 +216,65 @@ img {
         background: cyan;
         tranform: rotate(360deg);
     }
+}
+
+
+.expandable:not(:target) .expanded{
+    display: none;
+}
+
+.expandable:target .not-expanded {
+    display: none;
+}
+
+.expanded, .not-expanded {
+    display: flex;
+    text-decoration: none;
+}
+.expanded {
+    height: fit-content;
+}
+/*
+    Shadow overlay
+*/
+.shadow-overlay {
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.expanded .shadow-overlay {
+    height: 2rem;
+}
+.not-expanded .shadow-overlay {
+    height: 4rem;
+}
+
+.expandable-content {
+    z-index: 1;
+    position: relative;
+}
+
+/*
+    Expandable content size
+*/
+.not-expanded .expandable-content {
+    max-height: 40vh;
+    overflow: hidden;
+}
+
+.bottom-expandable-section {
+    color: white;
+    background: black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.expandable-image {
+    width: 100%;
+    height: auto;
 }

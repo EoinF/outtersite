@@ -9,6 +9,10 @@
     font-size: 0.75rem;
 }
 
+.shadow {
+    box-shadow: 1px 1px 5px black;
+}
+
 .jiggen-links {
     margin-top: 1rem;
     display: flex;
@@ -21,4 +25,24 @@
 }
 .jiggen-links a+a {
     margin-left: 0.2rem;
+}
+
+table {
+    width: 100%;
+    max-width: 30rem;
+    align-self: center;
+}
+table, td {
+    padding-left: 0.5rem;
+    border: 1px solid darkslategrey;
+    /* border-radius: 10px; */
+    border-collapse: collapse;
+    
+    background: rgb(0, 114, 158);
+    color: white;
+    /* font-weight: bold; */
+}
+
+td:last-child {
+    text-align: center;
 }

@@ -12,14 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav class='nav'>
-        <ul>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/games">Games</a></li>
-            <li><a href="/aboutme">About Me</a></li>
-        </ul>
-    </nav>
-    <main>
+    {{>header}}
+    <main class='flex-cards'>
         <div class='card-container-large'>
             <div class='card-container-content'>
                 <div class='card-title'>
@@ -29,7 +23,7 @@
                     <h1>Jiggen</h1>
                 </div>
                 <p>
-                    Play here: <a class="jiggen-link" href='https://jiggen.app'>https://jiggen.app</a>
+                    Play here: <a class="link" href='https://jiggen.app'>https://jiggen.app</a>
                 </p>
                 <div class='game-card-body'>
                     <div class='about-section'>
@@ -61,19 +55,5 @@
             </div>
         </div>
     </main>
-
-    <footer>
-        <a href='https://github.com/EoinF'>
-            github
-        </a>
-        <a href='https://twitter.com/outterest'>
-            twitter
-        </a>
-        <a href='https://www.linkedin.com/in/eoinf'>
-            linkedIn
-        </a>
-        <a href='https://www.youtube.com/user/outterest'>
-            youtube
-        </a>
-    </footer>
+    {{>footer}}
 </body>

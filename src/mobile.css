@@ -1,13 +1,11 @@
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .text-image-group  {
         display:block;
     }
-
     .text-image-group div.image-section {
         max-width: 100%;
         margin: auto;
     }
-    
 }
 
 .viewport-small, .viewport-medium, .viewport-large {
@@ -38,8 +36,16 @@
     }
 }
 
+@media(min-width: 500px) {
+    .not-expanded .expandable-content {
+        max-height: 50vh;
+        overflow: hidden;
+    }
+}
+
 @media (min-width: 620px) {
     .card-container-medium {
-        min-width: 600px;
+        min-width: initial;
+        width: 619px;
     }
 }

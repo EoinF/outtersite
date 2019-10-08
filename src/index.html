@@ -12,41 +12,23 @@
 <body>
     <div id='app-container'>
         {{>header}}
-        <main>
-            <div class='card-container-medium'>
-                <a href="/blog/11-07-2019" class='wrapper-link'>
-                    <div class='card-title-split'>
-                        <h1>Jiggen</h1>
-                        <h2>11th July 2019</h2>
-                    </div>
-                    <div class='text-image-group vertical-aligned'>
-                        <div class='text-section'>
-                            <span>
-                                I made a jigsaw puzzle game and I talk about it here.
-                            </span>
-                        </div>
-                        <div class='image-section'>
-                            <div>
-                                <img class="fixed-width-image" src="/assets/jiggen/logo.png" width="64px" height="64px"/>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <main class='grid-cards'>
+            {{>blog-card
+                pageHref="/blog/08-10-2019"
+                title="Steam Achievements as Analytics"
+                date="8th October 2019"
+                description="My first experience with releasing on Steam and how achievements are actually useful for analytics."
+                iconSrc="/assets/blog/08-10-2019/Achievement-level-created-unlocked.jpg"
+                shadow=true
+            }}
+            {{>blog-card
+                pageHref="/blog/11-07-2019"
+                title="Jiggen"
+                date="11th July 2019"
+                description="I made a jigsaw puzzle game and I talk about it here."
+                iconSrc="/assets/jiggen/logo.png"
+            }}
         </main>
-        <footer>
-            <a href='https://github.com/EoinF'>
-                github
-            </a>
-            <a href='https://twitter.com/outterest'>
-                twitter
-            </a>
-            <a href='https://www.linkedin.com/in/eoinf'>
-                linkedIn
-            </a>
-            <a href='https://www.youtube.com/user/outterest'>
-                youtube
-            </a>
-        </footer>
+        {{>footer}}
     </div>
 </body>

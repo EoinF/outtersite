@@ -1,0 +1,138 @@
+{{>blog-meta title="Achievements as Analytics"}}
+<body>
+    <div id='app-container'>
+        {{>header}}
+        <main class='flex-cards'>
+            <div class='card-container-large'>
+                <div class='card-title'>
+                    <h1>Using Steam Achievements for Analytics</h1>
+                </div>
+                <p>
+                    It's been more than a month since I released my game on steam, and although it didn't 
+                    do well, it's been a great learning experience. It was only a free game anyway; to get my feet wet in the world of Steam.
+                </p>
+                <h2>Achievements on Steam</h2>
+                <div class='text-image-group'>
+                    <div class='text-section'>
+                        <p>
+                            While playing steam games I don't give much heed to achievements. When I released my game on steam 
+                            however, I noticed something useful.
+                        </p>
+                        <p>
+                            In a game's store page all of the achievements for that game are listed. If you click on the 
+                            "view all" you get an overview of all the achievements for that game and how well players
+                            are doing at unlocking them.
+                        </p>
+                    </div>
+                    <div class='image-section'>
+                        {{>image-with-caption
+                            imgSrc='/assets/blog/08-10-2019/Viewing-achievements.png'
+                            captionText="View all achievements from the store page"
+                        }}
+                    </div>
+                    
+                </div>
+                <br/>
+                <p>
+                    The image in the following section shows the achievements for my own game. The percentage
+                    denotes the proportion of players that have both launched the game and unlocked
+                    the given achievement.
+                </p>
+                <h2>
+                    Interpreting the data
+                </h2>
+                
+                <div class='text-image-group'>
+                        <div class='text-section'>
+                        <p>
+                            The first thing you might notice is that the percentage for "Start a new game" is quite low - only 66.5% 
+                        </p>
+                        <p> 
+                            If someone goes to the trouble of downloading and running the game, you would at least expect them to play it!
+                            It only makes sense that these players are experiencing crashes upon loading into a level. I didn't have many
+                            devices to test with so I made a choice to only support Windows 10. Also it was a really old game I had abandoned,
+                            and I just wanted to get it done. 
+                        </p>
+                        <p>
+                            Secondly, there are quite a few players that have unlocked ALL achievements, and it's the same unlock rate for each.
+                        </p>
+                        <p>
+                            Suspicious... 🤔
+                        </p>
+                        <p>
+                            I am sure that this is a group that cheated the game, to "harvest" the achievements. I'm certain because
+                            this percentage has remained fairly static since about 1 or 2 days after the game was released. Also,
+                            it would be almost impossible to unlock them all in just 2 days - the game is quite long, and the extras
+                            are hard to get to.
+                        </p>
+                        <p>
+                            So people cheated - but it's not a big deal. They can enjoy the game however they like. But it might be a good idea
+                            to factor this into your analysis.
+                        </p>
+                    </div>
+                    <div class='image-section'>
+                        <div>
+                            {{>expandable-section
+                                tag="stats"
+                                content="
+                                    <img class='expandable-image' src='/assets/blog/08-10-2019/stats.jpg'/>
+                                "
+                            }}
+                            <div class='image-caption'>
+                                Percentage of achievements unlocked for all players
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Lastly, I realised that my game is too damn hard!
+                </p>
+                <p>
+                    If we remove both those that cheated and those who couldn't run the game from the stats, we end up with the following:
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Start a new game</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>Start level 7</td>
+                            <td>2.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Start level 13</td>
+                            <td>0.32%</td>
+                        </tr>
+                        <tr>
+                            <td>Start level 19</td>
+                            <td>0.48%</td>
+                        </tr>
+                        <tr>
+                            <td>Finish the game</td>
+                            <td>0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Welp, looks like my game was way too hard (or doesn't seem worth trying) for most players.
+                    For my next game I'll make sure to get a variety of players to test it to ensure it's balanced, as it feels
+                    like I wasted a lot of time in making the later levels.
+                </p>
+                <h2>Conclusion</h2>
+                <p>
+                    There's lots of insights you can gain from achievements if you put them in interesting places throughout your game.
+                    From how players are progressing in the game to how much a certain feature is used; there's a lot of room
+                    for analysis. And they're super easy to add to your game to boot!
+                </p>
+                <p>
+                    So next time you release a game on steam, make sure to think about how you can gain insights from your
+                    achievements after launch. It's kind of a win win, since there are players out there who value achievements
+                    quite highly, and you get the analytics as a bonus.
+                </p>
+                {{>more-blog-posts-link}}
+            </div>
+        </main>
+        {{>footer}}
+    </div>
+</body>

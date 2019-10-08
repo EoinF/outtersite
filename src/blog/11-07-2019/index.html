@@ -1,30 +1,14 @@
-<head>
-    <title>Outterest</title>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css'/>
-    <link rel='stylesheet' href='/index.css' />
-    <link rel='stylesheet' href='/mobile.css' />
-    <link rel='stylesheet' href='/blog/index.css' />
-    <link rel='stylesheet' href='/blog/mobile.css' />
-    <link rel='stylesheet' href='/navbar.css' />
-    <link rel='stylesheet' href='/footer.css' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+{{>blog-meta title="Jiggen"}}
 <body>
     <div id='app-container'>
-        <nav class='nav'>
-            <ul>
-                <li><a href="/">Blog</a></li>
-                <li><a href="/games">Games</a></li>
-                <li><a href="/aboutme">About Me</a></li>
-            </ul>
-        </nav>
-        <main>
+        {{>header}}
+        <main class='flex-cards'>
             <div class='card-container-large'>
                 <div class='text-image-group'>
                     <div class='text-section'>
                         <div class='card-title'>
                             <div>
-                                <img class="fixed-width-image" src="/assets/jiggen/logo.png" width="64px" height="64px"/>
+                                <img src="/assets/jiggen/logo.png" width="64px" height="64px"/>
                             </div>
                             <h1>Jiggen</h1>
                         </div>
@@ -36,17 +20,17 @@
                             Solve pre-made jigsaw puzzles or create your own!
                         </p>
                         <p>
-                            Play it at <a class='jiggen-link' href='https://jiggen.app'>https://jiggen.app</a>
+                            Play it at <a class='link' href='https://jiggen.app'>https://jiggen.app</a>
                         </p>
                         <p>
-                            Gameplay and features <a class='jiggen-link' href='/games/jiggen'>here</a>
+                            Gameplay and features <a class='link' href='/games/jiggen'>here</a>
                         </p>
                     </div>
                     <div class="image-section">
-                        <div>
-                            <img src="/assets/jiggen/screenshot2.png"/>
-                            <div class='image-caption'>Solve puzzles on your phone, tablet or PC</div>
-                        </div>
+                        {{>image-with-caption
+                            imgSrc="/assets/jiggen/screenshot2.png"
+                            captionText="Solve puzzles on your phone, tablet or PC"
+                        }}
                     </div>
                 </div>
                 <div>
@@ -59,8 +43,7 @@
                 </div>
                 <div class='text-image-group'>
                     <div class='text-section'>
-                        
-                    <p>
+                        <p>
                             The initial idea for the game was to allow templates to be uploaded, from which the puzzle
                             pieces would be extracted. Then a background image could be chosen to be paired with that template,
                             either from a list of predefined backgrounds or one provided by the player.
@@ -79,15 +62,10 @@
                         </p>
                     </div>
                     <div class="image-section">
-                        <div>
-                            <img 
-                                src="/assets/jiggen/screenshot3.png"
-                                width='400px'
-                            />
-                            <div class='image-caption'>
-                                An early prototype
-                            </div>
-                        </div>
+                        {{>image-with-caption
+                            imgSrc="/assets/jiggen/screenshot3.png"
+                            captionText="An early prototype"
+                        }}
                     </div>
                 </div>
                 <div>
@@ -107,12 +85,10 @@
                         </p>
                     </div>
                     <div class="image-section">
-                        <div>
-                            <img src="/assets/jiggen/screenshot6.png" />
-                            <div class='image-caption'>
-                                Save custom puzzles to your device
-                            </div>
-                        </div>
+                        {{>image-with-caption
+                            imgSrc="/assets/jiggen/screenshot6.png"
+                            captionText="Save custom puzzles to your device"
+                        }}
                     </div>
                 </div>
                 <div>
@@ -138,17 +114,16 @@
                         </p>
                     </div>
                     <div class="image-section">
-                        <div>
-                            <img
-                                src="/assets/jiggen/screenshot1.png"
-                            />
-                            <div class='image-caption'>
-                                Images can be used from your device or other websites
-                            </div>
-                        </div>
+                        {{>image-with-caption
+                            imgSrc="/assets/jiggen/screenshot1.png"
+                            captionText="Images can be used from your device or other websites"
+                        }}
                     </div>
                 </div>
+                <br/>
+                {{>more-blog-posts-link}}
             </div>
         </main>
+        {{>footer}}
     </div>
 </body>

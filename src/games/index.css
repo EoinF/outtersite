@@ -72,14 +72,6 @@ main {
     align-items: center;
 }
 
-.expandable:not(:target) .expanded{
-    display: none;
-}
-
-.expandable:target .not-expanded {
-    display: none;
-}
-
 .fixed-width-image {
     max-width: unset;
 }

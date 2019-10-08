@@ -13,7 +13,9 @@
         margin-right: 0.2rem;
     }
 
-    .gif-section {
+    .gif-section {        
+        display: flex;
+        justify-content: center;
         margin: 0.25rem;   
         grid-row: 1 / span 2;
         grid-column: 2 / span 2;
