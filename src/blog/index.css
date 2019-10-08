@@ -32,7 +32,7 @@ table {
     max-width: 30rem;
     align-self: center;
 }
-table, td {
+table, td, th {
     padding-left: 0.5rem;
     border: 1px solid darkslategrey;
     /* border-radius: 10px; */
