@@ -37,8 +37,25 @@ body {
     flex: 1;
     min-height: fit-content;
     display: grid;
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr;
     justify-items: center;
+}
+
+
+.two-per-row {
+    grid-template-columns: 1fr;
+}
+
+.two-per-row > *:nth-child(even) {
+    justify-self: center;
+}
+
+.two-per-row > *:nth-child(odd) {
+    justify-self: center;
+}
+
+.two-per-row > *:last-child:nth-child(odd) {
+    grid-column: 1 / span 1;
 }
 
 .vertical-aligned {

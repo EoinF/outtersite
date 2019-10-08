@@ -83,6 +83,23 @@
         background: black;
         z-index: 1;
     }
+    
+    .two-per-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .two-per-row > *:nth-child(even) {
+        justify-self: flex-start;
+    }
+
+    .two-per-row > *:nth-child(odd) {
+        justify-self: flex-end;
+    }
+    
+    .two-per-row > *:last-child:nth-child(odd) {
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
 }
 
 @keyframes fade-in {
