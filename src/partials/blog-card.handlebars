@@ -1,0 +1,23 @@
+<div class='card-container-medium'>
+    <a href="{{pageHref}}" class='wrapper-link'>
+        <div class='text-image-group vertical-aligned'>
+            <div class='text-section'>
+                <div class='card-title-split'>
+                    <h1>{{title}}</h1>
+                    <h2>{{date}}</h2>
+                </div>
+                <span class='card-description'>
+                    {{description}}
+                </span>
+            </div>
+            <div class='image-section'>
+                <div>
+                    <img class="{{#if shadow}}shadow{{/if}}"
+                        src="{{iconSrc}}" 
+                        width="64px" 
+                        height="64px"/>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
