@@ -63,7 +63,7 @@ function start(done) {
     browserSyncInstance.init({
         server: config.outputPath
     });
-    gulp.watch(config.htmlGlob, compileHtml);
+    gulp.watch(config.htmlInputsGlob, compileHtml);
     gulp.watch(config.cssGlob, copyCss);
     gulp.watch(config.imgGlob, copyImages);
     done();

@@ -4,9 +4,10 @@ module.exports = function () {
         srcPath,
         handlebarsPartialPath: './src/partials',
         outputPath: './build',
-        htmlGlob: srcPath + '/**/*.html',
-        cssGlob: srcPath + '/**/*.css',
-        imgGlob: [srcPath + '/**/*.png', srcPath + '/**/*.jpg', srcPath + '/**/*.gif']
+        htmlInputsGlob: [srcPath + '**/*.html', srcPath + '**/*.handlebars'],
+        htmlGlob: srcPath + '**/*.html',
+        cssGlob: srcPath + '**/*.css',
+        imgGlob: [srcPath + '**/*.png', srcPath + '**/*.jpg', srcPath + '**/*.gif', srcPath + '**/*.ico']
     };
 
     return config;
