@@ -8,7 +8,7 @@
     }
 }
 
-.viewport-small, .viewport-medium, .viewport-large {
+.viewport-small, .viewport-medium, .viewport-large, .viewport-huge {
     display: none;
 }
 
@@ -18,14 +18,20 @@
     }
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 401px) and (max-width: 600px) {
     .viewport-medium {
         display: block;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 601px) and (max-width: 800px) {
     .viewport-large {
+        display: block;
+    }
+}
+
+@media (min-width: 801px) {
+    .viewport-huge {
         display: block;
     }
 }

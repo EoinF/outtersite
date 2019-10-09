@@ -47,12 +47,6 @@ main {
     font-size: 1.75rem;
     margin: 0 0.3rem 0;
     text-align: center;
-    white-space: nowrap;
-}
-
-.card-title-container {
-    text-decoration: none; 
-    color: black;
 }
 
 .card-container-controls {

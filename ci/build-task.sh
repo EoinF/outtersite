@@ -1,9 +1,19 @@
 #!/bin/sh
 set -ex
 
+# Generate the main content to be served
 npm ci
 npm run build
 
+# Generate the phaser3 physics demo
+git clone https://github.com/eoinf/phaser3-2d-terrain-car-example
+cd phaser3-2d-terrain-car-example
+npm ci
+npm run build
+cd ..
+cp -R phaser3-2d-terrain-car-example/dist build/demos/phaser3-physics
+
+# Compress all the non image files
 find build -type f \
     ! -name '*.gz' \
     ! -name '*.png' \

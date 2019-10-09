@@ -21,7 +21,6 @@
 
     .card-container .card-container-content .card-title h1 {
         width: 7rem;
-        white-space: unset;
     }
 
     .card-container:target .modal {

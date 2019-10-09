@@ -295,3 +295,8 @@ img {
     width: 100%;
     height: auto;
 }
+
+.unstyled-link {
+    text-decoration: none; 
+    color: black;
+}
