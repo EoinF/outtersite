@@ -1,15 +1,7 @@
 <head>
-        <title>Outterest</title>
-        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css'/>
-        <link rel='stylesheet' href='/index.css' />
-        <link rel='stylesheet' href='/mobile.css' />
-        <link rel='stylesheet' href='/games/index.css' />
-        <link rel='stylesheet' href='/games/mobile.css' />
+        {{>games-meta title="Cup of Ethanol - Simple platformer game"}}
         <link rel='stylesheet' href='/games/cupofethanol/index.css' />
         <link rel='stylesheet' href='/games/cupofethanol/mobile.css' />
-        <link rel='stylesheet' href='/navbar.css' />
-        <link rel='stylesheet' href='/footer.css' />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
     {{>header}}
@@ -78,18 +70,5 @@
             </div>
         </div>
     </main>
-    <footer>
-        <a href='https://github.com/EoinF'>
-            github
-        </a>
-        <a href='https://twitter.com/outterest'>
-            twitter
-        </a>
-        <a href='https://www.linkedin.com/in/eoinf'>
-            linkedIn
-        </a>
-        <a href='https://www.youtube.com/user/outterest'>
-            youtube
-        </a>
-    </footer>
+    {{>footer}}
 </body>

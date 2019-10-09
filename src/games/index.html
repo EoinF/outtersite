@@ -1,22 +1,8 @@
 <head>
-    <title>Outterest</title>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css'/>
-    <link rel='stylesheet' href='/index.css' />
-    <link rel='stylesheet' href='/mobile.css' />
-    <link rel='stylesheet' href='/games/index.css' />
-    <link rel='stylesheet' href='/games/mobile.css' />
-    <link rel='stylesheet' href='/navbar.css' />
-    <link rel='stylesheet' href='/footer.css' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>games-meta title="Games"}}
 </head>
 <body>
-    <nav class='nav'>
-        <ul>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/games">Games</a></li>
-            <li><a href="/aboutme">About Me</a></li>
-        </ul>
-    </nav>
+    {{>header}}
     <main class='grid-cards two-per-row'>
         <!--
             Jiggen
@@ -91,7 +77,6 @@
             </div>
             <div>
                 <div class='card-container-controls'>
-                    <!-- <a href='https://www.dropbox.com/s/isvbhwfymhh5tcn/CupOfEthanol_0.2.0.rar?dl=1'> -->
                     <a href='https://store.steampowered.com/app/1127360/Cup_Of_Ethanol/'>
                         <button>Download</button>
                     </a>
@@ -127,18 +112,5 @@
             </div>
         </div>
     </main>
-    <footer>
-        <a href='https://github.com/EoinF'>
-            github
-        </a>
-        <a href='https://twitter.com/outterest'>
-            twitter
-        </a>
-        <a href='https://www.linkedin.com/in/eoinf'>
-            linkedIn
-        </a>
-        <a href='https://www.youtube.com/user/outterest'>
-            youtube
-        </a>
-    </footer>
+    {{>footer}}
 </body>

@@ -1,5 +1,5 @@
 
-nav {
+.navigation-header {
     position: sticky;
     z-index: 999;
     top: 0;
@@ -9,7 +9,7 @@ nav {
     box-shadow: 1px 1px 5px black;
 }
 
-nav ul {
+.navigation-header ul {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -18,26 +18,26 @@ nav ul {
     padding: 0.2rem 0 0.2rem 4rem;
 }
 
-nav li {
+.navigation-header li {
     padding: 0.2rem;
     margin-right: 1.5rem;
     list-style: none;
 }
 
-nav a {
+.navigation-header a {
     color: white;
     text-decoration: none;
     white-space: nowrap;
 }
 
 @media (max-width: 450px) {
-    nav {
+    .navigation-header {
         font-size: 1.3rem;
     }
-    nav li {
+    .navigation-header li {
         margin: 0;
     }
-    nav ul {
+    .navigation-header ul {
         justify-content: space-around;
         padding: 0.2rem 1rem;
     }
