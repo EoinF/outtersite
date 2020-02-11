@@ -19,7 +19,7 @@ cd Flower-Tactics-Prototype
 npm ci
 npm run build
 cd ..
-cp -R Flower-Tactics-Prototype/dist build/demos/flower-strategy
+cp -R Flower-Tactics-Prototype/dist build/demos/flower-strategy-prototype
 
 # Compress all the non image files
 find build -type f \
