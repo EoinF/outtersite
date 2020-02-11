@@ -13,6 +13,14 @@ npm run build
 cd ..
 cp -R phaser3-2d-terrain-car-example/dist build/demos/phaser3-physics
 
+# Generate the flower strategy demo
+git clone https://github.com/eoinf/Flower-Tactics-Prototype
+cd Flower-Tactics-Prototype
+npm ci
+npm run build
+cd ..
+cp -R Flower-Tactics-Prototype/dist build/demos/flower-strategy
+
 # Compress all the non image files
 find build -type f \
     ! -name '*.gz' \
