@@ -8,19 +8,11 @@
     .card-container {
         min-height: 275px;
     }
-    
-    .card-title-container {
-        display: flex;
-    }
 
-    .card-container .card-container-content .card-title {
+    .card-container .card-container-content {
         flex-flow: column;
         margin-right: 0.5rem;
         justify-content: center;
-    }
-
-    .card-container .card-container-content .card-title h1 {
-        width: 7rem;
     }
 
     .card-container:target .modal {
