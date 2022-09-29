@@ -10,14 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-handlebars-html": "0.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-replace": "^1.0.0",
     "handlebars": "^4.4.2",
-    "serve": "^10.1.2",
-    "del": "^5.1.0"
-  },
-  "dependencies": {}
+    "serve": "^14.0.1"
+  }
 }
