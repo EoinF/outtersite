@@ -1,0 +1,10 @@
+main {
+
+    /* background: #cad6ff; */
+}
+
+.card-container-large {
+    background: radial-gradient(700px,  rgb(66, 91, 169), rgb(63, 122, 190));
+    /* background: #3F7ABE; */
+    color: white;
+}

@@ -36,7 +36,7 @@ main {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.5rem;
 }
 
 .card-container-content .card-title h1 {
