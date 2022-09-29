@@ -1,116 +1,125 @@
 <head>
-    {{>games-meta title="Games"}}
+  {{>games-meta title="Games"}}
 </head>
 <body>
-    {{>header}}
-    <main class='grid-cards two-per-row'>
-        <!--
+  {{>header}}
+  <main class="grid-cards two-per-row">
+    <!--
             Jiggen
         -->
-        <div class='card-container'>
-            <!-- 
+    <div class="card-container">
+      <!-- 
                 Card content
             -->
-            <div class='card-container-content'>
-                <a href='/games/jiggen' class='card-title-container unstyled-link'>
-                    <div class='card-title'>
-                        <div>
-                            <img class="fixed-width-image" src="/assets/jiggen/logo.png" width="64px" height="64px"/>
-                        </div>
-                        <h1>Jiggen</h1>
-                    </div>
-                    <div class='gameplay-image'>
-                        <img src="/assets/jiggen/gameplay-jiggen.png"/>
-                    </div>
-                </a>
-                <div class='card-body'>
-                    <p>
-                        A mobile web game in which you can solve jigsaw puzzles or create your own. 
-                    </p>
-                    <p>
-                        Play it now on your phone, tablet or PC.
-                    </p>
-                </div>
-            </div>
-            <!--
-                Card controls
-            --> 
+      <div class="card-container-content">
+        <a href="/games/jiggen" class="card-title-container unstyled-link">
+          <div class="card-title">
             <div>
-                <div class='card-container-controls'>
-                    <a href='https://jiggen.app'>
-                        <button>Play</button>
-                    </a>
-                    <a class='github-link' href='https://github.com/EoinF/Jiggen'>
-                        <img src='/assets/github-mark.png'/>
-                    </a>
-                    <a href='/games/jiggen'>
-                        <button class="secondary">More</button>
-                    </a>
-                </div>
+              <img
+                class="fixed-width-image"
+                src="/assets/jiggen/logo.png"
+                width="64px"
+                height="64px"
+              />
             </div>
+            <h1>Jiggen</h1>
+          </div>
+          <div class="gameplay-image">
+            <img src="/assets/jiggen/gameplay-jiggen.png" />
+          </div>
+        </a>
+        <div class="card-body">
+          <p>
+            A mobile web game in which you can solve jigsaw puzzles or create
+            your own.
+          </p>
+          <p>Play it now on your phone, tablet or PC.</p>
         </div>
+      </div>
+      <!--
+                Card controls
+            -->
+      <div>
+        <div class="card-container-controls">
+          <a href="https://jiggen.app">
+            <button>Play</button>
+          </a>
+          <a class="github-link" href="https://github.com/EoinF/Jiggen">
+            <img src="/assets/github-mark.png" />
+          </a>
+          <a href="/games/jiggen">
+            <button class="secondary">More</button>
+          </a>
+        </div>
+      </div>
+    </div>
 
-        <!-- 
+    <!-- 
             Cup of Ethanol
         -->
-        <div id='cupofethanol' class='card-container'>
-            <div class='card-container-content'>
-                <a href='/games/cupofethanol' class='card-title-container unstyled-link'>
-                    <div class='card-title'>
-                        <div>
-                            <img class="fixed-width-image" src="/assets/cupofethanol/logo.png" width="64px" height="64px" />
-                        </div>
-                        <h1>Cup of Ethanol</h1>
-                    </div>
-                    <div class='gameplay-image'>
-                        <img src="/assets/cupofethanol/gameplay.png"/>
-                    </div>
-                </a>
-                <div class='card-body'>
-                    <p>
-                        A windows desktop platformer game
-                    </p> 
-                    <p>
-                        Collect coasters and find the pint of Guinness at the end of each level.
-                    </p>
-                </div>
-            </div>
+    <div id="cupofethanol" class="card-container">
+      <div class="card-container-content">
+        <a
+          href="/games/cupofethanol"
+          class="card-title-container unstyled-link"
+        >
+          <div class="card-title">
             <div>
-                <div class='card-container-controls'>
-                    <a href='https://store.steampowered.com/app/1127360/Cup_Of_Ethanol/'>
-                        <button>Download</button>
-                    </a>
-                    <a class='github-link' href='https://github.com/EoinF/CupOfEthanol'>
-                        <img src='/assets/github-mark.png'/>
-                    </a>
-                    <a href='/games/cupofethanol'>
-                        <button class="secondary">More</button>
-                    </a>
-                </div>
+              <img
+                class="fixed-width-image"
+                src="/assets/cupofethanol/logo.png"
+                width="64px"
+                height="64px"
+              />
             </div>
+            <h1>Cup of Ethanol</h1>
+          </div>
+          <div class="gameplay-image">
+            <img src="/assets/cupofethanol/gameplay.png" />
+          </div>
+        </a>
+        <div class="card-body">
+          <p>A windows desktop platformer game</p>
+          <p>
+            Collect coasters and find the pint of Guinness at the end of each
+            level.
+          </p>
         </div>
+      </div>
+      <div>
+        <div class="card-container-controls">
+          <a href="https://store.steampowered.com/app/1127360/Cup_Of_Ethanol/">
+            <button>Download</button>
+          </a>
+          <a class="github-link" href="https://github.com/EoinF/CupOfEthanol">
+            <img src="/assets/github-mark.png" />
+          </a>
+          <a href="/games/cupofethanol">
+            <button class="secondary">More</button>
+          </a>
+        </div>
+      </div>
+    </div>
 
-            
-        <!-- 
+    <!-- 
             Work in progress
         -->
-        <div id='wip' class='card-container'>
-            <div class='card-container-content'>
-                <div class='card-title'>
-                    <div>
-                        <img src="/assets/WIP-icon.png"/>
-                    </div>
-                    <h1 style='width: auto'>More coming soon!</h1>
-                </div>
-                <p>
-                    More projects will be added later. 
-                </p>
-                <p>
-                    Feel free to check out my <a href="https://github.com/eoinf">Github</a> repositories in
-                    the meantime.
-                </p>
-            </div>
+    <div id="wip" class="card-container">
+      <div class="card-container-content">
+        <div class="card-title">
+          <div>
+            <img src="/assets/WIP-icon.png" />
+          </div>
+          <h1 style="width: auto">More coming soon!</h1>
         </div>
-    </main>
-    {{>footer}}
+        <p>More projects will be added later.</p>
+        <p>
+          Feel free to check out my
+          <a href="https://github.com/eoinf">Github</a> repositories in the
+          meantime.
+        </p>
+      </div>
+    </div>
+  </main>
+  {{>footer}}
 </body>

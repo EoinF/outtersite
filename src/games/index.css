@@ -13,7 +13,7 @@ main {
     box-shadow: 2px 2px 12px #0009;
     
     min-width: 95%;
-    max-width: 34vw;
+    max-width: 40vw;
     
     display: flex;
     flex-flow: column;
@@ -47,7 +47,9 @@ main {
 
 .card-container-controls {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
+    row-gap: 0.5rem;
     margin-bottom: 0.1875rem;
 }
 .card-container-controls a+a {

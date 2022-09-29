@@ -1,4 +1,7 @@
 @media(min-width: 850px) {
+    .card-container {
+        min-width: auto;
+    }
     .card-container .card-container-content {
         flex-flow: column;
         margin-right: 0.5rem;
