@@ -9,21 +9,17 @@ main {
     /* background: lightblue; */
     background: radial-gradient(200px, rgb(229, 248, 255), rgb(217, 232, 239));
 
-    /* background: radial-gradient(200px, #3f7927, #004c00); */
-    border: 1px solid #87d4b0;
-    box-shadow: 1px 1px 10px black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px #0009;
     
     min-width: 95%;
     max-width: 34vw;
-
-    margin-bottom: 1rem;
     
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 
-    margin: 1rem 0.5rem 0;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .card-container:target {
@@ -68,13 +64,6 @@ main {
 
 .fixed-width-image {
     max-width: unset;
-}
-
-.gameplay-image {
-    max-width: 100%;
-    margin: 1px;
-    
-    box-shadow: 1px 1px 2px gray;
 }
 
 .game-card-body {

@@ -1,26 +1,19 @@
 <head>
-    {{>blog-meta title="Blog posts from Outterest"}}
+  {{>blog-meta title="Blog posts from Outterest"}}
 </head>
 <body>
-    <div id='app-container'>
-        {{>header}}
-        <main class='grid-cards'>
-            {{>blog-card
-                pageHref="/blog/08-10-2019"
-                title="Steam Achievements as Analytics"
-                date="8th October 2019"
-                description="My first experience with releasing on Steam and how achievements are actually useful for analytics."
-                iconSrc="/assets/blog/08-10-2019/Achievement-level-created-unlocked.jpg"
-                shadow=true
-            }}
-            {{>blog-card
-                pageHref="/blog/11-07-2019"
-                title="Jiggen"
-                date="11th July 2019"
-                description="I made a jigsaw puzzle game and I talk about it here."
-                iconSrc="/assets/jiggen/logo.png"
-            }}
-        </main>
-        {{>footer}}
-    </div>
+  <div id="app-container">
+    {{>header}}
+    <main class="grid-cards">
+      {{>blog-card pageHref="/blog/08-10-2019" title="Steam Achievements as
+      Analytics" date="8th October 2019" description="My first experience with
+      releasing on Steam and how achievements are actually useful for
+      analytics."
+      iconSrc="/assets/blog/08-10-2019/Achievement-level-created-unlocked.jpg"
+      shadow=true }} {{>blog-card pageHref="/blog/11-07-2019" title="Jiggen"
+      date="11th July 2019" description="I made a jigsaw puzzle game and I talk
+      about it here." iconSrc="/assets/jiggen/logo.png" }}
+    </main>
+    {{>footer}}
+  </div>
 </body>

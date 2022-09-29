@@ -1,10 +1,15 @@
 @media (max-width: 700px) {
     .text-image-group  {
-        display:block;
+        row-gap: 2rem;
+        flex-flow: column nowrap;
+        /* display:block; */
     }
     .text-image-group div.image-section {
         max-width: 100%;
         margin: auto;
+    }
+    .vertical-aligned {
+        align-items: flex-start;
     }
 }
 
@@ -53,5 +58,11 @@
     .card-container-medium {
         min-width: initial;
         width: 619px;
+    }
+}
+
+@media (min-width: 400px) {
+    .grid-cards, .flex-cards  {
+        padding: 2rem;
     }
 }
