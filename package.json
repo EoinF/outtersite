@@ -17,6 +17,6 @@
     "gulp-plumber": "^1.2.1",
     "gulp-replace": "^1.0.0",
     "handlebars": "^4.4.2",
-    "serve": "^14.0.1"
+    "serve": "^14.2.0"
   }
 }
